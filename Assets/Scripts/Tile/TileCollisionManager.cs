@@ -21,7 +21,7 @@ namespace Tile
             ChangeTileState(otherTile, context);
         }
 
-        public void ChangeTileState(Tile tile, CollisionContext context)
+        private void ChangeTileState(Tile tile, CollisionContext context)
         {
             if (context == CollisionContext.Enter) tile.ChangeState<TileShadowState>();
             else if (context == CollisionContext.Exit) tile.ChangeState<TileIdleState>();

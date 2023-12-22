@@ -9,7 +9,7 @@ namespace TKK.TileSlot
     {
         private Tile.Tile _currentTile;
         private int _currentIndex;
-        
+
         public int CurrentIndex
         {
             get => _currentIndex;
@@ -18,12 +18,14 @@ namespace TKK.TileSlot
 
         public void SetCurrentTileNull()
         {
+            CurrentIndex = 0;
+            if (_currentTile) _currentTile.transform.SetParent(null);
             _currentTile = null;
         }
 
         private TileSlotController _tileSlotController => GameManager.Instance.TileSlotController;
 
-        public void SetSlot(Tile.Tile tile,int index)
+        public void SetSlot(Tile.Tile tile, int index)
         {
             CurrentIndex = index;
             _currentTile = tile;
@@ -43,7 +45,7 @@ namespace TKK.TileSlot
         {
             var multiplier = _tileSlotController.SlotPositionAdjusterData.IncrementalXPos * CurrentIndex;
             var xPos = _tileSlotController.SlotPositionAdjusterData.StartingXPos + multiplier;
-            transform.DOMoveX(xPos,.25f);
+            transform.DOMoveX(xPos, .25f);
         }
     }
 }

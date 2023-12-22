@@ -44,11 +44,9 @@ namespace Tile
         {
             if (ColliderCountReturner == 0)
                 _tileCollisionManager.HandleCollision(_collidingTiles, _tile, CollisionContext.Exit);
-            Debug.Log(tile.sortingLayerOrder + tile.transform.position.ToString());
 
             foreach (var tilee in _collidingTiles)
             {
-                Debug.Log(tile.sortingLayerOrder.ToString() + tile.transform.position.ToString() + tilee.sortingLayerOrder.ToString() + tilee.transform.position);
                 tilee.TileCollisionHandler._tileCollisionManager.HandleCollisionForSingleTile(_tile,
                     tilee, CollisionContext.Exit);
             }

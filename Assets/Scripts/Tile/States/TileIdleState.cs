@@ -14,8 +14,6 @@ namespace Tile.States
             Tile.TileShadowRenderer.gameObject.SetActive(false);
         }
 
-        private bool ShadowBlocker() => Tile.TileCollisionHandler.ColliderCountReturner == 0;
-
         public override void OnUpdate()
         {
         }

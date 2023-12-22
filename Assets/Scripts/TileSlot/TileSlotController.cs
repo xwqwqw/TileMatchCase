@@ -45,6 +45,7 @@ namespace TKK.TileSlot
             }
 
             _tileSlots.Clear();
+            
             currentTiles.Clear();
         }
 
