@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2b8e37ee2d249b797ce20900454051b, type: 3}
+  m_Name: LevelConfig
+  m_EditorClassIdentifier: 
+  <TilePrefab>k__BackingField: {fileID: 9121094647609549477, guid: 68b444c9531bb26439e1c756058b3b30, type: 3}
+  <TileSlotPrefab>k__BackingField: {fileID: 6728143334458467124, guid: 0dde432603c837b4f93a2d1c4ea96768, type: 3}
+  <GameLevels>k__BackingField:
+  - {fileID: 11400000, guid: 3404b67edf8323d4d839340df66e7b64, type: 2}
+  - {fileID: 11400000, guid: 5e0e2bf85693ea944a7d293d72796fdb, type: 2}
+  - {fileID: 11400000, guid: a1a4e4204a84e5943b818e204b9cf687, type: 2}
