@@ -11,7 +11,6 @@ namespace Tile.States
 
         private void CheckForShadow()
         {
-            if (!ShadowBlocker()) return;
             Tile.TileShadowRenderer.gameObject.SetActive(false);
         }
 

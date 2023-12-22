@@ -16,6 +16,11 @@ namespace TKK.Views
         private void Start()
         {
             AddListeners();
+        }
+
+        public override void Show()
+        {
+            base.Show();
             AssignCoinText();
         }
 

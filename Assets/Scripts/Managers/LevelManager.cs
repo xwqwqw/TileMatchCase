@@ -23,7 +23,7 @@ namespace Managers
         private int _targetLevel => GameManager.Instance.LevelNumberToBuildLevel;
         private int _targetViewLevel => GameManager.Instance.LevelNumberToDisplayLevel;
 
-        private void Start()
+        private void Awake()
         {
             ListenEvents();
         }
@@ -80,7 +80,14 @@ namespace Managers
                 targetTile.transform.SetParent(poolParents);
                 AssignTile(targetTile, tileData);
                 currentTiles.Add(targetTile);
+                TileReset(targetTile);
             }
+        }
+
+        private void TileReset(Tile.Tile targetTile)
+        {
+            targetTile.CurrentTileSlot = null;
+            targetTile.TileCollisionHandler.BoxCollider2D.enabled = true;
         }
 
         private static void AssignTile(Tile.Tile targetTile, TileData tileData)

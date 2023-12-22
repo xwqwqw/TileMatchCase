@@ -26,6 +26,5 @@ adding a verbose and release mode. This allows us to selectively disable unneces
 similar to Google's external dependency manager, providing better control over log outputs.
 
 
-
-
-
+Known Issue: There is visual problem when you play the game too fast it 
+happens because of the event calls.

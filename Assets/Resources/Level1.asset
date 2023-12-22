@@ -14,29 +14,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <LevelViewData>k__BackingField: {fileID: 0}
   <LevelCurrencyData>k__BackingField:
-    <TotalEarnedCoinAmount>k__BackingField: 150
+    <TotalEarnedCoinAmount>k__BackingField: 100
   <TileDatas>k__BackingField:
-  - <TilePosition>k__BackingField: {x: -2, y: 0, z: 0}
+  - <TilePosition>k__BackingField: {x: -4, y: 2, z: 0}
     <TileType>k__BackingField: 0
     <SortingLayerOrder>k__BackingField: 0
     <SortingOrderIndex>k__BackingField: 1
-  - <TilePosition>k__BackingField: {x: 0, y: 0, z: 0}
+  - <TilePosition>k__BackingField: {x: -4, y: 1, z: 0}
     <TileType>k__BackingField: 0
-    <SortingLayerOrder>k__BackingField: 0
+    <SortingLayerOrder>k__BackingField: 1
     <SortingOrderIndex>k__BackingField: 2
-  - <TilePosition>k__BackingField: {x: 2, y: 0, z: 0}
+  - <TilePosition>k__BackingField: {x: -4, y: 0, z: 0}
     <TileType>k__BackingField: 0
-    <SortingLayerOrder>k__BackingField: 0
+    <SortingLayerOrder>k__BackingField: 2
     <SortingOrderIndex>k__BackingField: 3
-  - <TilePosition>k__BackingField: {x: -2, y: -2, z: 0}
-    <TileType>k__BackingField: 1
-    <SortingLayerOrder>k__BackingField: 0
+  - <TilePosition>k__BackingField: {x: 4, y: 1, z: 0}
+    <TileType>k__BackingField: 2
+    <SortingLayerOrder>k__BackingField: 1
     <SortingOrderIndex>k__BackingField: 4
-  - <TilePosition>k__BackingField: {x: 0, y: -2, z: 0}
-    <TileType>k__BackingField: 1
+  - <TilePosition>k__BackingField: {x: 4, y: 2, z: 0}
+    <TileType>k__BackingField: 2
     <SortingLayerOrder>k__BackingField: 0
     <SortingOrderIndex>k__BackingField: 5
-  - <TilePosition>k__BackingField: {x: 2, y: -2, z: 0}
-    <TileType>k__BackingField: 1
-    <SortingLayerOrder>k__BackingField: 0
+  - <TilePosition>k__BackingField: {x: 4, y: 0, z: 0}
+    <TileType>k__BackingField: 2
+    <SortingLayerOrder>k__BackingField: 2
     <SortingOrderIndex>k__BackingField: 6
+  - <TilePosition>k__BackingField: {x: 0, y: -2, z: 0}
+    <TileType>k__BackingField: 3
+    <SortingLayerOrder>k__BackingField: 2
+    <SortingOrderIndex>k__BackingField: 7
+  - <TilePosition>k__BackingField: {x: 0, y: -1, z: 0}
+    <TileType>k__BackingField: 3
+    <SortingLayerOrder>k__BackingField: 1
+    <SortingOrderIndex>k__BackingField: 8
+  - <TilePosition>k__BackingField: {x: 0, y: 0, z: 0}
+    <TileType>k__BackingField: 3
+    <SortingLayerOrder>k__BackingField: 0
+    <SortingOrderIndex>k__BackingField: 9

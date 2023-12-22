@@ -14,11 +14,14 @@ namespace Tile
         {
             if (CheckOverUI.IsOverUI()) return;
             if (CheckIfShadowed()) return;
+            if (CheckOnSlot()) return;
             Events.OnTileClicked.Invoke(_tile);
             Events.OnPlaySoundSfx.Invoke(_audioClip);
         }
 
         private bool CheckIfShadowed()
             => _tile.TileShadowRenderer.gameObject.activeInHierarchy;
+
+        private bool CheckOnSlot() => _tile.CurrentTileSlot;
     }
 }

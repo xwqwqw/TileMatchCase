@@ -1,13 +1,13 @@
 ﻿using System.Collections.Generic;
 using Constants;
 using UnityEngine;
-using Utility;
 
 namespace Tile
 {
     public class TileCollisionHandler : MonoBehaviour
     {
         private BoxCollider2D _boxCollider2D;
+        public BoxCollider2D BoxCollider2D => _boxCollider2D;
         private Tile _tile;
         private TileCollisionManager _tileCollisionManager;
         private List<Tile> _collidingTiles = new List<Tile>();
@@ -44,9 +44,11 @@ namespace Tile
         {
             if (ColliderCountReturner == 0)
                 _tileCollisionManager.HandleCollision(_collidingTiles, _tile, CollisionContext.Exit);
+            Debug.Log(tile.sortingLayerOrder + tile.transform.position.ToString());
 
             foreach (var tilee in _collidingTiles)
             {
+                Debug.Log(tile.sortingLayerOrder.ToString() + tile.transform.position.ToString() + tilee.sortingLayerOrder.ToString() + tilee.transform.position);
                 tilee.TileCollisionHandler._tileCollisionManager.HandleCollisionForSingleTile(_tile,
                     tilee, CollisionContext.Exit);
             }

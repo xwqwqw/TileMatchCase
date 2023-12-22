@@ -43,6 +43,7 @@ namespace TKK.Views
                 UIManager.Instance.InGameLoading.StartLoading(delegate
                 {
                     GameManager.Instance.ChangeState<GameManagerMainMenuState>();
+                    GameManager.Instance.TileSlotController.ResetTileSlot();
                 });
                 Hide();
             });

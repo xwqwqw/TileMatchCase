@@ -11,6 +11,7 @@ namespace Tile.States
 
         public override void OnEnter()
         {
+            Tile.TileCollisionHandler.BoxCollider2D.enabled = false;
             MakeTileChildOfSlotAndStartMovement();
         }
 

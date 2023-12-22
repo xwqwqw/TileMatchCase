@@ -33,11 +33,17 @@ namespace TKK.TileSlot
         {
             if (currentTiles.Count <= 6) return;
             Events.OnGameOver.Invoke();
+            ResetTileSlot();
+        }
+
+        public void ResetTileSlot()
+        {
             foreach (var tileSlot in _tileSlots)
             {
                 tileSlot.SetCurrentTileNull();
                 OnMatchComplete(tileSlot);
             }
+
             _tileSlots.Clear();
             currentTiles.Clear();
         }
