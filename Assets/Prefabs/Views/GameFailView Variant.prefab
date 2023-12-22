@@ -658,6 +658,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7017828282479572120, guid: ddc9c795512468e4585545e7632235dd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7017828282479572122, guid: ddc9c795512468e4585545e7632235dd, type: 3}
       propertyPath: m_fontColor.a
       value: 1
@@ -780,7 +784,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7017828283846228343, guid: ddc9c795512468e4585545e7632235dd, type: 3}
       propertyPath: m_Name
-      value: GameFailView
+      value: GameFailView Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7017828283846228343, guid: ddc9c795512468e4585545e7632235dd, type: 3}
       propertyPath: m_IsActive
