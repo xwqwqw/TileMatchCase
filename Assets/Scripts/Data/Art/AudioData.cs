@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Data.Art
+namespace TKK.Data.Art
 {
     [CreateAssetMenu(menuName = "AudioData/Audios")]
     public class AudioData : ScriptableObject

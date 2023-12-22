@@ -1,6 +1,6 @@
 ﻿using DG.Tweening;
-using Managers;
-using Tile.States;
+using TKK.Managers;
+using TKK.Tile.States;
 using UnityEngine;
 
 namespace TKK.TileSlot

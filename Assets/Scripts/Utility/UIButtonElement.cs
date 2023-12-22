@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
 
-namespace Utility
+namespace TKK.Utility
 {
     public class UIButtonElement : MonoBehaviour
     {

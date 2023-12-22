@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Utility
+namespace TKK.Utility
 {
     public class ResetPosition : MonoBehaviour
     {

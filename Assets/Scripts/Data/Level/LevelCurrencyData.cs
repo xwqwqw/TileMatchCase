@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Data.Level
+namespace TKK.Data.Level
 {
     [System.Serializable]
 

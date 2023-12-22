@@ -1,4 +1,4 @@
-namespace Interface
+namespace TKK.Interface
 {
     public interface IState
     {

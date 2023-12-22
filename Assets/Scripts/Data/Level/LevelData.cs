@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using Tile.Data;
+using TKK.Tile.Data;
 using UnityEngine;
 
-namespace Data.Level
+namespace TKK.Data.Level
 {
     public class LevelData : ScriptableObject
     {

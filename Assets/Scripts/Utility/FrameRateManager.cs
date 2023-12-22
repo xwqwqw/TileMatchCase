@@ -2,7 +2,7 @@ using System.Collections;
 using System.Threading;
 using UnityEngine;
 
-namespace Utility
+namespace TKK.Utility
 {
     public class FrameRateManager : MonoBehaviour
     {

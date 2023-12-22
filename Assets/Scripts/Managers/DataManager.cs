@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Managers
+namespace TKK.Managers
 {
     public abstract class DataManager<T> where T : ScriptableObject
     {

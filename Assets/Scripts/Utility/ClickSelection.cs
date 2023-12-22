@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Utility
+namespace TKK.Utility
 {
     [SelectionBase]
     public class ClickSelection : MonoBehaviour

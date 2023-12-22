@@ -1,4 +1,4 @@
-﻿namespace Utility
+﻿namespace TKK.Utility
 {
     public static class TKKColors
     {

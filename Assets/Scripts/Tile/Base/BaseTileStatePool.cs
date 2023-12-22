@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Tile.Base
+namespace TKK.Tile.Base
 {
     public class BaseTileStatePool
     {

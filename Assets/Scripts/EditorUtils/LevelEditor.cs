@@ -1,15 +1,15 @@
 #if UNITY_EDITOR
 
 using System.Collections.Generic;
-using Constants;
-using Data.Art;
-using Data.Level;
-using Managers;
-using Tile.Data;
+using TKK.Constants;
+using TKK.Data.Art;
+using TKK.Data.Level;
+using TKK.Managers;
+using TKK.Tile.Data;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-namespace EditorUtils
+namespace TKK.EditorUtils
 {
     public class LevelEditor : MonoBehaviour
     {

@@ -1,7 +1,7 @@
-﻿using Constants;
+﻿using TKK.Constants;
 using UnityEngine;
 
-namespace Tile.Data
+namespace TKK.Tile.Data
 {
     [System.Serializable]
     public struct TileData

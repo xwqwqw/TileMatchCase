@@ -1,6 +1,6 @@
-﻿using Interface;
-using Managers;
+﻿using TKK.Managers;
 using TKK.Managers.GameManagerStates;
+using TKK.Views.Base;
 using UnityEngine;
 using UnityEngine.UI;
 

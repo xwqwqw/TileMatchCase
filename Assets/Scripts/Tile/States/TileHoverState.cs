@@ -1,7 +1,6 @@
-using Tile.Base;
-using UnityEngine;
+using TKK.Tile.Base;
 
-namespace Tile.States
+namespace TKK.Tile.States
 {
     public class TileHoverState : BaseTileState
     {

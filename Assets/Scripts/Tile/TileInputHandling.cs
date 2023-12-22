@@ -1,9 +1,9 @@
-﻿using Data.Art;
-using Managers;
+﻿using TKK.Data.Art;
+using TKK.Managers;
 using TKK.Utility;
 using UnityEngine;
 
-namespace Tile
+namespace TKK.Tile
 {
     public class TileInputHandling : MonoBehaviour
     {

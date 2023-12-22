@@ -1,7 +1,7 @@
 ﻿#if UNITY_EDITOR
 using UnityEditor;
 #endif
-using EditorUtils;
+using TKK.EditorUtils;
 using UnityEngine;
 
 namespace TKK.Editor

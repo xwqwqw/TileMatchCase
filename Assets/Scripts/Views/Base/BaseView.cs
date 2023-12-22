@@ -1,7 +1,8 @@
+using TKK.Interface;
 using TKK.TweenLibrary.Animation;
 using UnityEngine;
 
-namespace Interface
+namespace TKK.Views.Base
 {
     public abstract class BaseView : MonoBehaviour, IView
     {

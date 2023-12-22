@@ -1,6 +1,6 @@
-﻿using Data.Level;
-using EditorUtils;
-using Managers;
+﻿using TKK.Data.Level;
+using TKK.EditorUtils;
+using TKK.Managers;
 using UnityEditor;
 using UnityEngine;
 

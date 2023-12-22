@@ -1,11 +1,10 @@
-using Constants;
-using Interface;
-using Tile.Base;
-using Tile.States;
-using TKK.TileSlot;
+using TKK.Constants;
+using TKK.Interface;
+using TKK.Tile.Base;
+using TKK.Tile.States;
 using UnityEngine;
 
-namespace Tile
+namespace TKK.Tile
 {
     [SelectionBase]
     public class Tile : MonoBehaviour
@@ -69,9 +68,9 @@ namespace Tile
             private set => tileShadow = value;
         }
 
-        private TileSlot _currentTileSlot;
+        private TileSlot.TileSlot _currentTileSlot;
 
-        public TileSlot CurrentTileSlot
+        public TileSlot.TileSlot CurrentTileSlot
         {
             get => _currentTileSlot;
             set => _currentTileSlot = value;

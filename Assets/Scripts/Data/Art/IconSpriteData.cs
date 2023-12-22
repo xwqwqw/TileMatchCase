@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace Data.Art
+namespace TKK.Data.Art
 {
     [CreateAssetMenu(menuName = "TileData/IconSpriteData", fileName = "Assets/Resources/IconSpriteData")]
     public class IconSpriteData : ScriptableObject

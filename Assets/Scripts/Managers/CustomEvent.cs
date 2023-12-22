@@ -1,6 +1,6 @@
 using System;
 
-namespace Managers
+namespace TKK.Managers
 {
     public class CustomEvent
     {

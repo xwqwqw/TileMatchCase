@@ -1,6 +1,6 @@
 using UnityEditor;
 using UnityEngine;
-using HeaderAttribute = Utility.HeaderAttribute;
+using HeaderAttribute = TKK.Utility.HeaderAttribute;
 
 namespace TKK.Editor
 {

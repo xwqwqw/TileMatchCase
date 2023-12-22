@@ -1,17 +1,16 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Tile.Data;
-using TKK.TileSlot;
+using TKK.Tile.Data;
 using UnityEditor;
 using UnityEngine;
 
-namespace Data.Level
+namespace TKK.Data.Level
 {
     [CreateAssetMenu(menuName = "TileData/LevelConfig", fileName = "Assets/Resources/LevelConfig")]
     public class LevelConfig : ScriptableObject
     {
         [field: SerializeField] public Tile.Tile TilePrefab { get; private set; }
-        [field: SerializeField] public TileSlot TileSlotPrefab { get; private set; }
+        [field: SerializeField] public TileSlot.TileSlot TileSlotPrefab { get; private set; }
 
         [field: SerializeField] public List<LevelData> GameLevels { get; private set; } = new List<LevelData>();
 

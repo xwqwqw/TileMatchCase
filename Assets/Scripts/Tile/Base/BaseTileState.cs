@@ -1,6 +1,6 @@
-using Interface;
+using TKK.Interface;
 
-namespace Tile.Base
+namespace TKK.Tile.Base
 {
     public abstract class BaseTileState : IState
     {

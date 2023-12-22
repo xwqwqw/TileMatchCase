@@ -1,8 +1,8 @@
 ﻿using System.Collections;
-using Managers;
+using TKK.Managers;
+using TKK.Utility;
 using UnityEngine;
 using UnityEngine.UI;
-using Utility;
 
 namespace TKK.Loading
 {

@@ -1,13 +1,12 @@
 ﻿using DG.Tweening;
-using Interface;
-using TKK.Loading;
+using TKK.Interface;
 using TKK.Managers.GameManagerStates;
 using TKK.Managers.GameManagerStates.Base;
 using TKK.TileSlot;
+using TKK.Utility;
 using UnityEngine;
-using Utility;
 
-namespace Managers
+namespace TKK.Managers
 {
     public class GameManager : MonoSingleton<GameManager>
     {

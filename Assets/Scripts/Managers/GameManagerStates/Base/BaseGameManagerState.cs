@@ -1,5 +1,4 @@
-﻿using Interface;
-using Managers;
+﻿using TKK.Interface;
 
 namespace TKK.Managers.GameManagerStates.Base
 {

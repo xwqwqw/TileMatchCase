@@ -1,10 +1,9 @@
 using System.Collections;
-using Constants;
-using Managers;
+using TKK.Constants;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace TKK
+namespace TKK.Managers
 {
     public class EntranceLoader : MonoBehaviour
     {

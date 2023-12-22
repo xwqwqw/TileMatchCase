@@ -1,13 +1,11 @@
-﻿using System;
-using Interface;
-using TKK.Loading;
-using TKK.Managers.GameManagerStates;
+﻿using TKK.Loading;
+using TKK.Utility;
+using TKK.Views.Base;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using Utility;
 
-namespace Managers
+namespace TKK.Managers
 {
     public class UIManager : MonoSingleton<UIManager>
     {

@@ -1,6 +1,6 @@
+using TKK.Utility;
 using UnityEditor;
 using UnityEngine;
-using Utility;
 
 namespace TKK.Editor
 {

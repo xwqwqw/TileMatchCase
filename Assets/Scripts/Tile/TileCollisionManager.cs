@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using Constants;
-using Tile.States;
+using TKK.Constants;
+using TKK.Tile.States;
 
-namespace Tile
+namespace TKK.Tile
 {
     public class TileCollisionManager
     {

@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using Managers;
-using Tile.States;
+using TKK.Managers;
 using TKK.Optimization;
+using TKK.Tile.States;
 using UnityEngine;
 
 namespace TKK.TileSlot

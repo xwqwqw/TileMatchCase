@@ -1,13 +1,13 @@
 ﻿using System.Collections.Generic;
-using Data.Art;
-using Data.Level;
-using Tile.Data;
+using TKK.Data.Art;
+using TKK.Data.Level;
 using TKK.Managers.GameManagerStates;
 using TKK.Optimization;
+using TKK.Tile.Data;
+using TKK.Utility;
 using UnityEngine;
-using Utility;
 
-namespace Managers
+namespace TKK.Managers
 {
     public class LevelManager : MonoSingleton<LevelManager>
     {

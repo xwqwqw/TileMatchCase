@@ -1,7 +1,6 @@
-using TKK.TileSlot;
 using UnityEngine;
 
-namespace Managers
+namespace TKK.Managers
 {
     public static class Events
     {
@@ -19,7 +18,7 @@ namespace Managers
 
         public static readonly CustomEvent<Tile.Tile> OnTileClicked = new CustomEvent<Tile.Tile>();
         public static readonly CustomEvent OnCheckMatch = new CustomEvent();
-        public static readonly CustomEvent<TileSlot> OnMatchComplete = new CustomEvent<TileSlot>();
+        public static readonly CustomEvent<TileSlot.TileSlot> OnMatchComplete = new CustomEvent<TileSlot.TileSlot>();
 
         public static readonly CustomEvent<AudioClip> OnPlaySoundSfx = new CustomEvent<AudioClip>();
         public static readonly CustomEvent<AudioClip> OnPlaySoundMusic = new CustomEvent<AudioClip>();

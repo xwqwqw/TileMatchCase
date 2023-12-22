@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using Constants;
+using TKK.Constants;
 using UnityEngine;
 
-namespace Tile
+namespace TKK.Tile
 {
     public class TileCollisionHandler : MonoBehaviour
     {

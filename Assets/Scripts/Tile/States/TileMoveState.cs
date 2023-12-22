@@ -1,9 +1,9 @@
 using DG.Tweening;
-using Managers;
-using Tile.Base;
+using TKK.Managers;
+using TKK.Tile.Base;
 using UnityEngine;
 
-namespace Tile.States
+namespace TKK.Tile.States
 {
     public class TileMoveState : BaseTileState
     {

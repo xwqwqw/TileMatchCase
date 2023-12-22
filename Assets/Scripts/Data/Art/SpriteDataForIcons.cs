@@ -1,7 +1,7 @@
-﻿using Constants;
+﻿using TKK.Constants;
 using UnityEngine;
 
-namespace Data.Art
+namespace TKK.Data.Art
 {
     [System.Serializable]
     public class SpriteDataForIcons

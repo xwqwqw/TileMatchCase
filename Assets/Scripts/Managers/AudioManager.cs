@@ -1,5 +1,4 @@
-﻿using Data.Art;
-using Managers;
+﻿using TKK.Data.Art;
 using UnityEngine;
 
 namespace TKK.Managers

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using Random = UnityEngine.Random;
 
-namespace Utility
+namespace TKK.Utility
 {
 	public static class ListExtensions
 	{ 

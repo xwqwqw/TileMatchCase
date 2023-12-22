@@ -1,4 +1,4 @@
-﻿namespace Constants
+﻿namespace TKK.Constants
 {
     public enum TileType
     {

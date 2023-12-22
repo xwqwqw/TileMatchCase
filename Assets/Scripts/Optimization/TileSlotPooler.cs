@@ -1,4 +1,4 @@
-﻿using Managers;
+﻿using TKK.Managers;
 
 namespace TKK.Optimization
 {
