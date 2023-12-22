@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Managers;
 using Tile.States;
 using TKK.Optimization;
@@ -24,7 +25,21 @@ namespace TKK.TileSlot
         {
             Events.OnTileClicked.AddListener(GenerateNewTile);
             Events.OnCheckMatch.AddListener(CheckMatches);
+            Events.OnCheckMatch.AddListener(CheckFail);
             Events.OnMatchComplete.AddListener(OnMatchComplete);
+        }
+
+        private void CheckFail()
+        {
+            if (currentTiles.Count <= 6) return;
+            Events.OnGameOver.Invoke();
+            foreach (var tileSlot in _tileSlots)
+            {
+                tileSlot.SetCurrentTileNull();
+                OnMatchComplete(tileSlot);
+            }
+            _tileSlots.Clear();
+            currentTiles.Clear();
         }
 
         private void OnMatchComplete(TileSlot tileSlot) => TileSlotPooler.ReleaseTileSlot(tileSlot);
@@ -42,7 +57,6 @@ namespace TKK.TileSlot
 
             _tileSlots.Add(targetSlot);
             targetSlot.SetSlot(tile, indexOfSlot);
-
             ReorderTileIndexesByType();
             ReorderAllTilePositions();
         }
@@ -106,7 +120,6 @@ namespace TKK.TileSlot
 
         private void PerformMatch(List<Tile.Tile> matchedTiles)
         {
-            
             foreach (var tile in matchedTiles)
             {
                 currentTiles.Remove(tile);
@@ -115,8 +128,7 @@ namespace TKK.TileSlot
 
             ReorderTileIndexesByType();
             ReorderAllTilePositions();
-            
-            Events.OnCheckGameOver.Invoke();
+            CheckFail();
         }
     }
 }

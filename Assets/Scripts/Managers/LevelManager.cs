@@ -11,12 +11,17 @@ namespace Managers
 {
     public class LevelManager : MonoSingleton<LevelManager>
     {
+        [field: SerializeField] public LevelData CurrentLevelData { get; private set; }
         [field: SerializeField] public LevelConfig LevelConfig { get; private set; }
+
         [SerializeField] private Transform poolParents;
+        [SerializeField] private SpriteRenderer backgroundView;
+
         public List<Tile.Tile> currentTiles;
 
         public TilePooler TilePooler;
         private int _targetLevel => GameManager.Instance.LevelNumberToBuildLevel;
+        private int _targetViewLevel => GameManager.Instance.LevelNumberToDisplayLevel;
 
         private void Start()
         {
@@ -42,8 +47,9 @@ namespace Managers
             TilePooler.ReleaseTile(tile);
         }
 
-        private void DemolishLevel()
+        public void DemolishLevel()
         {
+            if (currentTiles.Count <= 0) return;
             foreach (var tile in currentTiles)
             {
                 TilePooler.ReleaseTile(tile);
@@ -52,10 +58,22 @@ namespace Managers
             currentTiles.Clear();
         }
 
-        public void BuildLevel() => InstantiateTilesFromLevelData(LevelConfig.GameLevels[_targetLevel]);
+        public void BuildLevel()
+        {
+            AssignViewAndText(LevelConfig.GameLevels[_targetLevel]);
+            InstantiateTilesFromLevelData(LevelConfig.GameLevels[_targetLevel]);
+            UIManager.Instance.SetLevelHeader();
+        }
+
+        private void AssignViewAndText(LevelData levelData)
+        {
+            if (levelData.LevelViewData == null) return;
+            backgroundView.sprite = levelData.LevelViewData;
+        }
 
         private void InstantiateTilesFromLevelData(LevelData levelData)
         {
+            CurrentLevelData = levelData;
             foreach (var tileData in levelData.TileDatas)
             {
                 var targetTile = TilePooler.GetTile();

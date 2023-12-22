@@ -77,7 +77,7 @@ namespace Tile
             set => _currentTileSlot = value;
         }
 
-        private void Start() => InitializeTile();
+        private void Awake() => InitializeTile();
 
         private void InitializeTile()
         {

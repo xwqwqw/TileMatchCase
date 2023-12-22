@@ -1,5 +1,6 @@
 ﻿using DG.Tweening;
 using Interface;
+using TKK.Loading;
 using TKK.Managers.GameManagerStates;
 using TKK.Managers.GameManagerStates.Base;
 using TKK.TileSlot;
@@ -11,6 +12,7 @@ namespace Managers
     public class GameManager : MonoSingleton<GameManager>
     {
         [field: SerializeField] public TileSlotController TileSlotController { get; private set; }
+        [field: SerializeField] public Transform Slot { get; private set; }
 
         private BaseGameManagerStatePool BaseGameManagerStatePool
         {
@@ -40,8 +42,13 @@ namespace Managers
 
         public int LevelNumberToDisplayLevel
         {
-            get => PlayerPrefs.GetInt("LevelNumberToDisplayLevel", 0);
+            get => PlayerPrefs.GetInt("LevelNumberToDisplayLevel", 1);
             set => PlayerPrefs.SetInt("LevelNumberToDisplayLevel", value);
+        }
+        public int Coin
+        {
+            get => PlayerPrefs.GetInt("Coin", 0);
+            set => PlayerPrefs.SetInt("Coin", value);
         }
 
         private void Start()
@@ -49,6 +56,12 @@ namespace Managers
             SetDevice();
             IncreaseTweenCapacity();
             InitializeGameManager();
+            ListenGameEvents();
+        }
+
+        private void ListenGameEvents()
+        {
+            Events.OnGameOver.AddListener(ChangeState<GameManagerFailState>);
         }
 
         private void Update() => CurrentState?.OnUpdate();

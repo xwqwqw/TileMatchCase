@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Constants;
 using UnityEngine;
+using Utility;
 
 namespace Tile
 {
@@ -12,7 +13,7 @@ namespace Tile
         private List<Tile> _collidingTiles = new List<Tile>();
         public int ColliderCountReturner => _collidingTiles.Count - 1;
 
-        private void Start()
+        private void Awake()
         {
             InitializeComponents();
         }
@@ -61,5 +62,6 @@ namespace Tile
 
         private bool ShouldIgnoreCollision(Collider2D other)
             => other == _boxCollider2D || !other.transform.parent.TryGetComponent(out Tile _);
+
     }
 }

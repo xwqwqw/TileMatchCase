@@ -9,11 +9,16 @@ namespace TKK.TileSlot
     {
         private Tile.Tile _currentTile;
         private int _currentIndex;
-
+        
         public int CurrentIndex
         {
             get => _currentIndex;
             set => _currentIndex = value;
+        }
+
+        public void SetCurrentTileNull()
+        {
+            _currentTile = null;
         }
 
         private TileSlotController _tileSlotController => GameManager.Instance.TileSlotController;

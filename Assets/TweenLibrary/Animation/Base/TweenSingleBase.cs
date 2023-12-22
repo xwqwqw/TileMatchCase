@@ -37,10 +37,7 @@ namespace TKK.TweenLibrary.Animation.Base
 #if UNITY_EDITOR
             InitializeEasing();
 #else
-			if (_easingMethod == null)
-			{
 				InitializeEasing();
-			}
 #endif
 
             if (time >= timings.Delay + GroupDelay)

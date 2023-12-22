@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b06a9f4e19284f849b665ae1ecae377f, type: 3}
   m_Name: Level2
   m_EditorClassIdentifier: 
+  <LevelViewData>k__BackingField: {fileID: 0}
+  <LevelCurrencyData>k__BackingField:
+    <TotalEarnedCoinAmount>k__BackingField: 150
   <TileDatas>k__BackingField:
   - <TilePosition>k__BackingField: {x: -2, y: 0, z: 0}
     <TileType>k__BackingField: 1

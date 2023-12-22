@@ -1,0 +1,31 @@
+Below are the planned but yet-to-be-implemented features:
+
+1- Decoration
+2- Life system
+3- Tutorial
+4- In-game skills
+
+The project employs various design patterns such as observer, state, 
+flyweight, and finally singleton. Additionally, there is a 
+level editor in the project, making the addition of new levels quite straightforward. 
+All core objects in the game have states, 
+which are efficiently utilized through a pooling system. 
+Except for the initial entry, there is no loading in the game, and the scene never reloads.
+This ensures a seamless gaming experience, even on older devices.
+
+The level editor operates through an overlay button. 
+Using arrow keys within the editor, we can move and place tiles, 
+and later procedurally assign them. Furthermore, the editor allows the 
+stacking of different layers or complete manual control if desired.
+
+The project incorporates a custom tweening library, 
+developed by myself, specifically for UI animations. 
+
+Additionally, there is a logging system that customizes Unity logs, 
+adding a verbose and release mode. This allows us to selectively disable unnecessary logs, 
+similar to Google's external dependency manager, providing better control over log outputs.
+
+
+
+
+

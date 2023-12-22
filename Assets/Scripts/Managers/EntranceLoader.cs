@@ -3,7 +3,6 @@ using Constants;
 using Managers;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 namespace TKK
 {
@@ -17,7 +16,6 @@ namespace TKK
         private IEnumerator LoadSceneAsync()
         {
             var operation = SceneManager.LoadSceneAsync(SceneNames.GameScene.ToString());
-            SceneManager.LoadSceneAsync(SceneNames.ViewScene.ToString(), LoadSceneMode.Additive);
 
             loadingScreen.SetActive(true);
             while (!operation.isDone)

@@ -10,14 +10,14 @@ namespace Tile
         {
             foreach (var otherTile in otherTiles)
             {
-                if ((int)otherTile.sortingLayerOrder > (int)currentTile.sortingLayerOrder) continue;
+                if ((int)otherTile.sortingLayerOrder >= (int)currentTile.sortingLayerOrder) continue;
                 ChangeTileState(otherTile, context);
             }
         }
     
         public void HandleCollisionForSingleTile(Tile otherTile, Tile currentTile, CollisionContext context)
         {
-            if ((int)otherTile.sortingLayerOrder > (int)currentTile.sortingLayerOrder) return;
+            if ((int)otherTile.sortingLayerOrder >= (int)currentTile.sortingLayerOrder) return;
             ChangeTileState(otherTile, context);
         }
 

@@ -14,7 +14,7 @@ namespace TKK.Managers.GameManagerStates
 
         private void CallUI()
         {
-            UIManager.Instance.targetObject.gameObject.SetActive(true);
+            UIManager.Instance.GameWonView.Show();
         }
 
         private void UpgradeLevel()
@@ -29,6 +29,9 @@ namespace TKK.Managers.GameManagerStates
 
         public override void OnExit()
         {
+            GameManager.Coin += LevelManager.Instance.
+                CurrentLevelData.LevelCurrencyData.TotalEarnedCoinAmount;
+            Events.OnCoinUpdated.Invoke(GameManager.Coin);
         }
 
         public override void OnReset()

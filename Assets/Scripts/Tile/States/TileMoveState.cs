@@ -14,6 +14,7 @@ namespace Tile.States
             MakeTileChildOfSlotAndStartMovement();
         }
 
+
         public override void OnUpdate()
         {
         }
@@ -41,6 +42,7 @@ namespace Tile.States
         {
             Tile.SortingOrder = Tile.CurrentTileSlot.CurrentIndex;
             Events.OnCheckMatch.Invoke();
+            Tile.TileShadowRenderer.gameObject.SetActive(false);
         }
 
         private void StartMovement()
